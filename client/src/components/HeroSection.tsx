@@ -21,7 +21,7 @@ const socialLinks = [
   },
   {
     icon: FileText,
-    href: "https://drive.google.com/file/d/1uv8fuN5jCMnnZcWKFRjQJGxPmmvy_-4k/view",
+    href: "https://drive.google.com/file/d/11L1q2iIXQKHgW4GizgJFUbx9cMX1LSPx/view?usp=drivesdk",
     label: "Resume",
   },
 ];
