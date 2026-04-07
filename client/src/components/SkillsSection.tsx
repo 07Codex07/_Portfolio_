@@ -1,6 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import SectionHeading from "./SectionHeading";
 
+const coreExpertise = ["RAG Systems", "LLM Engineering", "Vector Search", "Interpretable AI", "FastAPI"];
+
 const skillCategories = [
   {
     title: "AI & Machine Learning",
@@ -32,6 +34,26 @@ export default function SkillsSection() {
           title="Skills" 
           subtitle="Technologies and tools I work with daily"
         />
+
+        <p className="text-muted-foreground text-sm mb-8 text-center md:text-left">
+          Depth over breadth — here's where I actually live
+        </p>
+
+        <div className="mb-8 p-4 rounded-lg bg-primary/10 border border-primary/20">
+          <h3 className="text-xs font-medium text-primary uppercase tracking-wider mb-3">
+            Core Expertise
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {coreExpertise.map((skill) => (
+              <Badge
+                key={skill}
+                className="px-3 py-1.5 text-sm bg-primary/20 text-primary border border-primary/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
+              >
+                {skill}
+              </Badge>
+            ))}
+          </div>
+        </div>
 
         <div className="space-y-8">
           {skillCategories.map((category, categoryIndex) => (
@@ -65,9 +87,8 @@ export default function SkillsSection() {
 
         <div className="mt-12 p-6 rounded-lg bg-card/50 border border-card-border">
           <p className="text-muted-foreground text-center">
-            <span className="text-primary font-medium">Always learning:</span>{" "}
-            Currently exploring advanced agent architectures, multi-modal AI systems, 
-            and reinforcement learning from human feedback (RLHF).
+            <span className="text-primary font-medium">Currently exploring:</span>{" "}
+            multi-agent orchestration, RLHF pipelines, and the geometry of embedding spaces
           </p>
         </div>
       </div>

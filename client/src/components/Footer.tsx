@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, FileText, Mail, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Twitter, FileText, Mail, ArrowUp, BookOpen } from "lucide-react";
 
 const socialLinks = [
   {
@@ -27,6 +27,11 @@ const socialLinks = [
     href: "mailto:vinayak1672006@gmail.com",
     label: "Email",
   },
+  {
+    icon: BookOpen,
+    href: "https://medium.com/@vinayak1672006",
+    label: "Medium",
+  },
 ];
 
 const navLinks = [
@@ -34,7 +39,9 @@ const navLinks = [
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#newsletter", label: "Newsletter" },
+  { href: "#writing", label: "Writing" },
   { href: "#skills", label: "Skills" },
+  { href: "#depth", label: "Expertise" },
 ];
 
 export default function Footer() {

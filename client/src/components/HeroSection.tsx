@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, FileText, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Twitter, FileText, ArrowDown, BookOpen } from "lucide-react";
 import TerminalTyping from "./TerminalTyping";
 
 const socialLinks = [
@@ -23,6 +23,11 @@ const socialLinks = [
     icon: FileText,
     href: "https://drive.google.com/file/d/11L1q2iIXQKHgW4GizgJFUbx9cMX1LSPx/view?usp=drivesdk",
     label: "Resume",
+  },
+  {
+    icon: BookOpen,
+    href: "https://medium.com/@vinayak1672006",
+    label: "Medium",
   },
 ];
 

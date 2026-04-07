@@ -104,6 +104,7 @@ const projects: Project[] = [
     icon: Terminal,
     tags: ["Agent Systems", "NLP", "Linux"],
     technologies: ["Whisper", "LLMs", "Python", "Linux", "CLI"],
+    repoUrl: "https://github.com/07Codex07/local_smart_linux_assistant",
     features: [
       "Whisper speech-to-text integration",
       "LLM command interpretation",

@@ -1,0 +1,82 @@
+Make the following changes to my portfolio:
+1. Fix Missing GitHub Link
+In ProjectsSection.tsx, find the linuxassistant project object and add:
+repoUrl: "https://github.com/07Codex07/local_smart_linux_assistant"
+2. Add Medium to Social Links
+In HeroSection.tsx and Footer.tsx, add Medium to the socialLinks array:
+{
+  icon: BookOpen,
+  href: "https://medium.com/@vinayak1672006",
+  label: "Medium",
+}
+Import BookOpen from lucide-react if not already imported.
+3. Add a "Writing & Research" Section
+Create a new file client/src/components/WritingSection.tsx. This section should:
+
+Have a heading "# Writing & Research" with subtitle "Thoughts on interpretable AI, RAG systems, and the mathematics of intelligence"
+Display a featured article card for this Medium post:
+
+Title: "Why RAG Isn't Enough: Understanding CRAG Architecture"
+URL: https://medium.com/@vinayak1672006/why-rag-isnt-enough-understanding-crag-architecture-532c9bdfdfff
+Description: "A deep dive into Corrective RAG — why standard retrieval pipelines hallucinate, and how CRAG's self-assessment loop fixes it. Covers the evaluator model, corrective retrieval triggers, and web search fallback architecture."
+Tags: RAG, LLMs, Architecture, NLP
+A "Read on Medium" button linking to the article
+A subtle "Featured Post" badge
+
+
+Below the card, add a CTA row: "More writing on Medium →" linking to https://medium.com/@vinayak1672006
+Style it dark themed, consistent with the rest of the portfolio, with cyan accents and a gradient border on the article card
+
+4. Add a "Technical Depth" / MLOps & LLMOps Section
+Create a new file client/src/components/TechnicalDepthSection.tsx. This should:
+
+Have heading "# Technical Depth" with subtitle "Beyond building — understanding the systems underneath"
+Display three columns of competency cards:
+LLMOps
+
+Prompt versioning and evaluation
+Hallucination detection pipelines
+Token cost optimization
+Retrieval quality metrics (MRR, NDCG)
+Context window management
+
+MLOps Foundations
+
+Experiment tracking concepts
+Model serving patterns (REST, streaming)
+Vector index management (FAISS, flat vs IVF)
+Pipeline orchestration
+Evaluation datasets and benchmarking
+
+System Design
+
+Hybrid retrieval architectures (BM25 + dense)
+Worker/Checker LLM patterns
+Human-in-the-loop workflows
+Async job queues for AI pipelines
+RAG vs fine-tuning tradeoff reasoning
+
+
+Each card should have a small icon, title, and bullet list
+Use cyan accent for icons, dark card backgrounds, consistent with existing design
+
+5. Upgrade the Skills Section
+In SkillsSection.tsx, replace the flat tag dump with a tiered layout:
+
+Add a heading above the existing categories: "Depth over breadth — here's where I actually live"
+Add a new top row before the existing categories called "Core Expertise" with a slightly highlighted background (primary/10) containing: RAG Systems, LLM Engineering, Vector Search, Interpretable AI, FastAPI
+Keep existing categories below it
+Change the "Always learning" footer text to: "Currently exploring: multi-agent orchestration, RLHF pipelines, and the geometry of embedding spaces"
+
+6. Update Home.tsx
+Import and add both new sections in client/src/pages/Home.tsx:
+
+Add WritingSection between NewsletterSection and SkillsSection
+Add TechnicalDepthSection between SkillsSection and Footer
+
+7. Update Navigation
+In Navigation.tsx, add two new nav links to the navLinks array:
+{ href: "#writing", label: "Writing" },
+{ href: "#depth", label: "Expertise" },
+Add the corresponding section IDs (id="writing" and id="depth") to the new section components.
+Keep all existing styles, dark theme, cyan accents, and component patterns consistent with the rest of the codebase. Do not change anything that is already working.
