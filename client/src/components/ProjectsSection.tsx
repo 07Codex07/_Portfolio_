@@ -156,7 +156,7 @@ const projects: Project[] = [
     icon: Database,
     tags: ["AI/ML", "NLP", "Finance", "Analytics"],
     technologies: ["FinBERT", "K-Means", "DBSCAN", "PCA", "Python", "NIFTY 50"],
-    repoUrl: "https://github.com/07Codex07/SubjectiveRag",
+    repoUrl: "https://github.com/07Codex07/FinVector_Research",
     features: [
       "FinBERT embeddings (768-D) on 1,500+ timestamped financial news headlines",
       "PCA dimensionality reduction (768D → 50D → 2D) for regime visualization",
